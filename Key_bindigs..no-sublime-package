@@ -1,65 +1,59 @@
-[
-
-{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
-{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
-
-
-{ "keys": ["shift+f6"],"command": "side_bar_open_in_browser" ,"args":{"paths":[], "type":"production", "browser":""}},
-{ "keys": ["ctrl+shift+r"],"command": "reindent" ,"args": { "single_line": false }},
-{ "keys": ["ctrl+shift+s"],"command": "delete_trailing_spaces"},
-{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
-{ "keys": ["ctrl+shift+;"], "command": "shell_exec_open"},
-{ "keys": ["ctrl+'"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-{ "keys": ["ctrl+alt+t"], "command": "terminal_view_open" },
-
 {
-        "keys": ["alt+b"],
-        "command": "terminus_open",
-         "args" : {
-            "cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
-            "cwd": "${file_path:${folder}}",
-            "title": "Git Bash",
-            "panel_name": "Terminus"
-         }
-    },
+    "always_show_minimap_viewport": true,
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
+    "default_encoding": "UTF-8",
+    "draw_indent_guides": true,
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "fade_fold_buttons": false,
+    "font_face": "Source Code Pro",
+    "font_size": 10.6,
+    "word_wrap": true,
+    "fade_fold_buttons": false,
+    /*Cerrar los bloques de etiquetas*/
+    "bold_folder_labels": true,
+    "force_mode": true,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
 
-{ "keys": ["ctrl+a"], "command": "select_all"},
-    // Open git bash when Alt+2 is pressed
-    {
-        "keys": ["alt+2"],
-        "command": "terminus_open",
-         "args" : {
-            // Tell terminus to use Git Bash
-            // Replace the path below with your path to Git Bash
-            "cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
-
-            "cwd": "${file_path:${folder}}",
-            "panel_name": "Terminus"
-         }
-    },
-
-        // Open cmd.exe Command Prompt when Alt+1 is pressed
-    {
-        // The key press to look out for
-        "keys": ["alt+1"],
-
-        // Tell terminus to open something
-        "command": "terminus_open",
-
-        // Tell terminus what to open
-        "args" : {
-            // Open Command Prompt
-            "cmd": "cmd.exe",
-
-            // Provide Command Prompt with Current Working Directory
-            "cwd": "${file_path:${folder}}",
-
-            // Tell terminus to put it in the panel at the bottom of the screen
-            "panel_name": "Terminus"
-        }
-    }
-
-
-
-]
-/**/ 
+    // "caret_style": "solid",
+    // Valid values are “smooth”, “phase”, “blink”, “wide” and “solid”.
+    // “caret_style”: “smooth”,
+    "caret_style": "smooth",
+    "wide_caret": true,
+    // "caret_extra_width": 6,
+    "ignored_packages": [
+        "Markdown",
+        "Vintage"
+    ],
+    "line_padding_bottom": 3,
+    "line_padding_top": 3,
+    "lioshi_big_tab": false,
+    "material_theme_accent_bright-teal": true,
+    "material_theme_compact_panel": true,
+    "material_theme_compact_sidebar": true,
+    "material_theme_small_tab": true,
+    "material_theme_tabs_separator": true,
+    "material_theme_tree_headings": true,
+    "overlay_scroll_bars": "enabled",
+    "save_on_focus_lost": true,
+    "tab_size": 4,
+    "theme": "Adaptive.sublime-theme",
+    "theme_agila_auto_complete_pink": true,
+    "theme_agila_compact_sidebar": true,
+    "theme_agila_compact_tab": true,
+    "theme_agila_horizontal_scrollbar_pink": true,
+    "theme_agila_modified_tab_marker_pink": true,
+    "theme_agila_nano_mode": true,
+    "theme_agila_sidebar_font_xsmall": true,
+    "theme_agila_sidebar_heading_pink": true,
+    "theme_agila_sidebar_light_icons": true,
+    "theme_agila_sidebar_selected_entry_pink": true,
+    "theme_agila_vertical_scrollbar_pink": true,
+    "translate_tabs_to_spaces": true,
+    "ui_native_titlebar": true,
+    "ui_separator": true,
+    "ui_wide_scrollbars": true,
+    "update_check": false
+}
